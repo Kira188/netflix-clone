@@ -1,7 +1,7 @@
 # How to Start Off
 Start with cloning into the directory
 ```console 
-git clone https://github.com/Kira188/farmers-ecom/](https://github.com/Kira188/netflix-clone/
+git clone https://github.com/Kira188/netflix-clone/
 ```
 ## .ENV file management
 Create a .env file in the **frontend** folder  
