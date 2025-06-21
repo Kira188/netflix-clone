@@ -18,6 +18,15 @@
 .env.test.local
 .env.production.local
 
+firebaseConfig.js
+netflix-clone/firebaseConfig.js
+./firebaseConfig.js
+
+.env
+netflix-clone/.env
+./env
+
+
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
