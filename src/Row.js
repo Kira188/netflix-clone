@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from 'react'
 import axios from './axios';
-function Row({title, fetchUrl}) {
+import "./Row.css";
+function Row({title,isLargeRow ,fetchUrl}) {
     const [movies, setMovies] = useState([]);
     const base_url = "https://image.tmdb.org/t/p/original/"
     useEffect (()=>
@@ -19,7 +20,10 @@ function Row({title, fetchUrl}) {
         <div className="row_posters">
 
             {movies.map(movie => (
-                <img src={`${base_url}${movie.poster_path}`} alt={movie.name}/>
+                <img 
+                key = {movie.id}
+                className={`row_poster ${isLargeRow && "row_posterLarge"}`}
+                src={`${base_url}${isLargeRow ? movie.poster_path : movie.backdrop_path}`} alt={movie.name}/>
             ))}
             
         </div> 
