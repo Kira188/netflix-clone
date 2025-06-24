@@ -6,6 +6,7 @@
     display: flex;
     overflow-y: hidden;
     overflow-x: scroll;
+    gap: 8px;
     padding: 20px;
 }
 .row_posters::-webkit-scrollbar {
@@ -13,7 +14,8 @@
 }
 .row_poster{
     object-fit: contain;
-    width: 100%;
+    width: auto;
+    flex-shrink: 0;  
     max-height: 100px;
     transition: transform 450ms;
     margin-right: 10px;
