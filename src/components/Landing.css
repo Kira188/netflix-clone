@@ -1,0 +1,79 @@
+.landing {
+  background-image: url('../assets/netflix-bg.jpg'); /* Make sure this path is correct */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  position: relative;
+  color: white;
+}
+
+/* Dark overlay */
+.landing::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 0;
+}
+
+/* Ensure content appears above overlay */
+.landing > * {
+  position: relative;
+  z-index: 1;
+}
+
+/* Header */
+.landing__header .container-fluid {
+  max-width: 100%;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1rem;
+}
+
+
+/* Logo */
+.nav__logo {
+  width: 140px;
+  height: auto;
+  object-fit: contain;
+}
+
+
+/* Controls */
+.nav__controls {
+  display: flex;
+  align-items: center;
+  gap: 1rem; /* Added spacing between dropdown and button */
+}
+
+/* Select styling */
+.nav__controls select {
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 2px;
+  font-weight: 500;
+}
+
+.nav__controls select option {
+  color: black;
+}
+
+/* Sign in button */
+.nav__controls .btn {
+  padding: 6px 16px;
+  font-weight: 500;
+}
+
+.btn-danger {
+  background-color: #e50914;
+  border-color: #e50914;
+}
+
+.btn-danger:hover {
+  background-color: #f40612;
+  border-color: #f40612;
+}
