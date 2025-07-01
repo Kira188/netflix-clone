@@ -1,0 +1,63 @@
+[debug] [2025-07-01T13:18:01.109Z] ----------------------------------------------------------------------
+[debug] [2025-07-01T13:18:01.115Z] Command:       /opt/homebrew/Cellar/node/24.3.0/bin/node /opt/homebrew/bin/firebase init
+[debug] [2025-07-01T13:18:01.115Z] CLI Version:   14.9.0
+[debug] [2025-07-01T13:18:01.115Z] Platform:      darwin
+[debug] [2025-07-01T13:18:01.115Z] Node Version:  v24.3.0
+[debug] [2025-07-01T13:18:01.115Z] Time:          Tue Jul 01 2025 18:48:01 GMT+0530 (India Standard Time)
+[debug] [2025-07-01T13:18:01.115Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-07-01T13:18:01.120Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-07-01T13:18:01.120Z] > authorizing via signed-in user (kiranseenivasan@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /Users/kiranseenivasan/Documents/reactJS/netflix-clone/netflix_clone_2/netflix-clone
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  If you want to create a project in a Google Cloud organization or folder, please use "firebase projects:create" instead, and return to this command when you've created the project. 
+[debug] [2025-07-01T13:18:48.280Z] Checked if tokens are valid: true, expires at: 1751378379668
+[debug] [2025-07-01T13:18:48.281Z] Checked if tokens are valid: true, expires at: 1751378379668
+[debug] [2025-07-01T13:18:48.283Z] >>> [apiv2][query] POST https://firebase.googleapis.com/v1/projects:checkProjectId [none]
+[debug] [2025-07-01T13:18:48.283Z] >>> [apiv2][body] POST https://firebase.googleapis.com/v1/projects:checkProjectId {"proposedId":"new-firebase-project"}
+[debug] [2025-07-01T13:18:48.929Z] <<< [apiv2][status] POST https://firebase.googleapis.com/v1/projects:checkProjectId 200
+[debug] [2025-07-01T13:18:48.929Z] <<< [apiv2][body] POST https://firebase.googleapis.com/v1/projects:checkProjectId {"projectIdStatus":"PROJECT_ID_UNAVAILABLE","suggestedProjectId":"new-firebase-project-50ca7"}
+[debug] [2025-07-01T13:19:04.033Z] Checked if tokens are valid: true, expires at: 1751378379668
+[debug] [2025-07-01T13:19:04.033Z] Checked if tokens are valid: true, expires at: 1751378379668
+[debug] [2025-07-01T13:19:04.034Z] >>> [apiv2][query] POST https://firebase.googleapis.com/v1/projects:checkProjectId [none]
+[debug] [2025-07-01T13:19:04.034Z] >>> [apiv2][body] POST https://firebase.googleapis.com/v1/projects:checkProjectId {"proposedId":"new-firebase-project-50ca7"}
+[debug] [2025-07-01T13:19:04.423Z] <<< [apiv2][status] POST https://firebase.googleapis.com/v1/projects:checkProjectId 200
+[debug] [2025-07-01T13:19:04.423Z] <<< [apiv2][body] POST https://firebase.googleapis.com/v1/projects:checkProjectId {"projectIdStatus":"PROJECT_ID_AVAILABLE","suggestedProjectId":"new-firebase-project-50ca7"}
+[debug] [2025-07-01T13:19:07.297Z] Checked if tokens are valid: true, expires at: 1751378379668
+[debug] [2025-07-01T13:19:07.297Z] Checked if tokens are valid: true, expires at: 1751378379668
+[debug] [2025-07-01T13:19:07.297Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects [none]
+[debug] [2025-07-01T13:19:07.297Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"projectId":"new-firebase-project-50ca7","name":"new-firebase-project-50ca7"}
+[debug] [2025-07-01T13:19:08.699Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects 200
+[debug] [2025-07-01T13:19:08.700Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"name":"operations/create_project.global.9112351739837359842"}
+[debug] [2025-07-01T13:19:08.702Z] Checked if tokens are valid: true, expires at: 1751378379668
+[debug] [2025-07-01T13:19:08.702Z] Checked if tokens are valid: true, expires at: 1751378379668
+[debug] [2025-07-01T13:19:08.702Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/operations/create_project.global.9112351739837359842 [none]
+[debug] [2025-07-01T13:19:09.938Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/operations/create_project.global.9112351739837359842 200
+[debug] [2025-07-01T13:19:09.939Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/operations/create_project.global.9112351739837359842 {"name":"operations/create_project.global.9112351739837359842","metadata":{"@type":"type.googleapis.com/google.cloudresourcemanager.v1.ProjectCreationStatus","ready":true},"done":true,"error":{"code":8,"message":"The project cannot be created because you have exceeded your allotted project quota.","details":[{"@type":"type.googleapis.com/google.rpc.QuotaFailure","violations":[{"description":"The project cannot be created because you have exceeded your allotted project quota."}]}]}}
+[debug] [2025-07-01T13:19:10.095Z] FirebaseError: The project cannot be created because you have exceeded your allotted project quota.
+    at OperationPoller.poll (/opt/homebrew/lib/node_modules/firebase-tools/lib/operation-poller.js:24:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async createCloudProject (/opt/homebrew/lib/node_modules/firebase-tools/lib/management/projects.js:215:29)
+    at async createFirebaseProjectAndLog (/opt/homebrew/lib/node_modules/firebase-tools/lib/management/projects.js:83:9)
+    at async promptAndCreateNewProject (/opt/homebrew/lib/node_modules/firebase-tools/lib/init/features/project.js:31:12)
+    at async Object.doSetup (/opt/homebrew/lib/node_modules/firebase-tools/lib/init/features/project.js:85:31)
+    at async init (/opt/homebrew/lib/node_modules/firebase-tools/lib/init/index.js:57:13)
+    at async Command.initAction [as actionFn] (/opt/homebrew/lib/node_modules/firebase-tools/lib/commands/init.js:198:5)
+[error] 
+[error] Error: Failed to create project. See firebase-debug.log for more info.
